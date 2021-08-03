@@ -11,6 +11,8 @@
                 let a = document.getElementById("inputA").value;
                 let b = document.getElementById("inputB").value;
                 document.getElementById("valueA").innerHTML = a;
+                document.getElementById("valueB").innerHTML = b;
+                document.getElementByID("valueC").innerHTML = Number(a)+Number(b);
 
             }
         </script>
@@ -34,7 +36,7 @@
 
 
         <p>
-            <span id = "valueA">1</span> + 2 = 3 입니다. 
+            <span id = "valueA">1</span> + <span id = "valueB">2</span> = 3 입니다. 
         </p>
 
 
