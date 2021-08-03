@@ -7,7 +7,10 @@
 
         <script type="text/javascript">
             function doSomething(){
-                alert("Hellow World!");
+                
+                let a = document.getElementById("inputA").value;
+                let b = document.getElementById("inputB").value;
+                document.getElementById("valueA").innerHTML = a;
 
             }
         </script>
@@ -28,6 +31,11 @@
 
         <label for ="inputB">b</label>
         <input id="inputB" value=2 onkeyup="doSomething()">
+
+
+        <p>
+            <span id = "valueA">1</span> + 2 = 3 입니다. 
+        </p>
 
 
         <p>동해물과 백두산이 마르고 닳도록</p>
